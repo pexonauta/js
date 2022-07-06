@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-image: linear-gradient(72deg,  rgb(44, 41, 41), rgb(41, 24, 19), rgb(68, 21, 2));
+    width: 100%;
+    height: 100vh;
+}
+.form{
+    margin: 10% auto;
+    width: 500px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.479);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.form legend{
+    align-items: center;
+    justify-content: center;
+    padding-left: 40%;
+    border-bottom: 2px solid #1d1c1c;
+    font-weight: bolder;
+    color: #000000;
+}
+.corp-form{
+    margin-top: 50px;
+    transform: translate(20%,50%);
+    margin-bottom: 30px;
+}
+#verificar{
+    border: 1px solid rgba(0, 0, 0, 0.671);
+    width: 80px;
+    height: 40px;
+    background-color: aqua;
+    cursor: pointer;
+}
+.corp-form label{
+    color: #8d231f;
+    text-align: center;
+    font-weight: bold;
+}

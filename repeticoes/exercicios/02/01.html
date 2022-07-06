@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="01.css">
+    <title>Tabuada</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tabuada</h1>
+
+    </header>
+    <section>
+        <div id="dados">
+            <p>Inicio
+                <input type="number" name="inico" id="n1" min="0">
+            </p>
+            <p>Fim
+                <input type="number" name="fim" id="n2" max="20">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="tabuada()">
+            </p>
+        </div>
+        <div>
+            <select name="tabuada" id="seltab" size="10">
+                <option value="">Digite Um Número Acima</option>
+            </select>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; PeixeVoa</p>
+
+    </footer>
+    <script src="01.js"></script>
+</body>
+
+</html>

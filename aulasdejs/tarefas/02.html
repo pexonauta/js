@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="02.css">
+    
+    <title>Nacionalidade</title>
+
+</head>
+<body>
+    <main>
+        <form class="form" action="get">
+            <legend>Nacionalidade</legend>
+            <div class="corp-form"><!--Corpo Do Form-->
+                <label for="pais">Escreva Seu Pais</label>
+                <input type="text" name="pais" id="pais"> <br>
+                <div class="res" id="res"></div>
+            </div>
+        </form>
+        <input type="button" id="verificar" value="Verificar" onclick="verificar()">
+    </main>
+
+
+    <script>
+        function verificar(){
+            var pais = window.document.querySelector('input#pais')
+            var res = window.document.getElementById('res')
+            if(pais.value == 'brasil' || pais.value == 'Brasil'){
+                res.innerHTML = `<p>Você é Brasileiro voce é Legal</p>`
+            }
+            else{
+                res.innerHTML = `<p>Você é Estrangeiro voce é foda</p>`
+            }
+            res.innerHTML += '<p>Cuidado Ao Viajar</p>'
+        }
+        
+    </script>
+    
+</body>
+</html>

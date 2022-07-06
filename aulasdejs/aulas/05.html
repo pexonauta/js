@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05</title>
+    <style>
+        body{
+            background-color: #4db391;
+            color: #fff;
+            font: normal 10pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inciciando estudos com DOM</h1>
+    <p>Aqui vai o rsultado</p>
+    <p>apredendo a usar o <strong>dom</strong> em JavaScript</p>
+    <div id="msg">Clique aqui</div>
+    
+    <script>
+        //Sigla DOM (Document Object Model)
+        //window.document.write('Olá, Mundo')
+        //window.document.write(window.document.URL)
+        //var corpo = window.document.body
+        //window.document.write('Está escrito assim: ' +  p1.innerText)
+        var p1 = window.document.getElementsByTagName('p')[0]
+        document.write(p1.innerHTML)
+        var d = window.document.querySelector('div#msg')//seletores
+        d.style.background = 'blue'
+
+
+        /* Seletores
+        por marca 
+        window.document.getElementsByTagName() (MARCA)
+        window.document.getElementById() (ID)
+        window.document.getElementsByName() (NOME)
+        window.document.getElementsByClassName() (CLASSE)
+        window.document.querySelector() (SELETOR)
+
+        */
+    </script>
+</body>
+</html>
